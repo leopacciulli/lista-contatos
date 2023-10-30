@@ -1,0 +1,25 @@
+$focusedColor: #333333;
+$inputLabelColor: #9e9e9e;
+$error: #eb4a46;
+
+.inputField {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.errorField {
+  color: $error;
+  margin-top: 2px;
+}
+
+.inputLabel {
+  color: $inputLabelColor !important;
+}
+
+.labelFocused {
+  color: $focusedColor !important;
+}
+
+.inputFocused::after {
+  border-bottom: 2px solid $focusedColor !important;
+}

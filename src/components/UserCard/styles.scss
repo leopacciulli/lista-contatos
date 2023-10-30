@@ -1,0 +1,45 @@
+$red: #e65b59;
+$green: #3dbe2f;
+$white: #fff;
+
+.user {
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 8px;
+  position: relative;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 8px #eee;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+  gap: 8px;
+
+  button {
+    border: none;
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 13px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .editUser {
+    background-color: $green;
+    color: $white;
+  }
+
+  .deleteUser {
+    background-color: $red;
+    color: $white;
+  }
+}

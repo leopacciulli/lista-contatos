@@ -1,0 +1,52 @@
+
+$buttonBackgroundColor: #00C8B3;
+$disabledColor: #DDDCDC;
+$disabledBackgroundColor: #F6F6F6;
+$white: #FFF;
+
+.formContainer {
+  width: 100%;
+}
+
+form {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 80%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    max-width: 75%;
+  }
+
+  button {
+    margin-top: 32px;
+    width: 100%;
+    border-radius: 24px;
+    color: $white;
+    background-color: $buttonBackgroundColor;
+    border: none;
+    height: 44px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover:not([disabled]) {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    &:disabled {
+      color: $disabledColor;
+      background-color: $disabledBackgroundColor;
+      cursor: not-allowed;
+      border: 1px solid $disabledColor;
+    }
+  }
+}

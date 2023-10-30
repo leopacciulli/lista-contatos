@@ -1,0 +1,58 @@
+$red: #e65b59;
+$white: #fff;
+$black: #000;
+
+.title {
+  font-size: 24px;
+}
+
+.overlayModal {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modalDelete {
+  position: relative;
+}
+
+.flexButtons {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.closeModal {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.modalDelete {
+  button {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-size: 13px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .cancel {
+    background-color: $white;
+    color: $black;
+  }
+
+  .deleteUser {
+    background-color: $red;
+    color: $white;
+  }
+}

@@ -1,0 +1,26 @@
+$white: #FFF;
+$headerBackgroundColor: #2f2f31;
+
+header {
+  height: 80px;
+  background-color: $headerBackgroundColor;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 80px;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .active {
+    border-bottom: 1.5px solid $white;
+    padding-bottom: 1px;
+  }
+}
