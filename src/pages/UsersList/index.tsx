@@ -19,8 +19,7 @@ function UsersList() {
   const getUsers = async () => {
     const usersLocalStorage = localStorage.getItem('users')
     const users: User[] = JSON.parse(usersLocalStorage || '{}')
-
-    if (!usersLocalStorage) {
+    if (!users) {
       const response = await axios.get(USERS_LIST_URL)
       const usersList = response.data
       localStorage.setItem('users', JSON.stringify(usersList))
